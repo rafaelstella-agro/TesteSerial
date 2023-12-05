@@ -31,7 +31,7 @@ function RootLayoutNav() {
     <>
       <SafeAreaProvider>
         <Stack>
-          <Stack.Screen name="index" />
+          <Stack.Screen name="(MenuInferior)" options={{headerShown:false}} />
         </Stack>
         <StatusBar style="auto" animated />
       </SafeAreaProvider>
