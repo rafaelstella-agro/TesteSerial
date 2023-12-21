@@ -4,6 +4,10 @@
   <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
   <uses-permission android:name="android.permission.VIBRATE"/>
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+  <uses-permission android:name="android.permission.USB_PERMISSION" />
+  <uses-feature android:name="android.hardware.usb.host" />
+
   <queries>
     <intent>
       <action android:name="android.intent.action.VIEW"/>
@@ -25,9 +29,13 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="generico-expo"/>
+        <data android:scheme="teste-serial"/>
         <data android:scheme="com.anonymous.GenericoExpo"/>
       </intent-filter>
+      <intent-filter>
+		    <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+	    </intent-filter>
+      <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter" />
     </activity>
     <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" android:exported="false"/>
   </application>

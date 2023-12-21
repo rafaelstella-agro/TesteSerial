@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Generico-Expo",
-    "slug": "Generico-Expo",
-    "scheme": "generico-expo",
+    "name": "Teste Serial",
+    "slug": "Teste-Serial",
+    "scheme": "teste-serial",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
